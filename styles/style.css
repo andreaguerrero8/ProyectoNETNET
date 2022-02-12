@@ -1,0 +1,335 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(216, 98, 98);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow: hidden;
+
+}
+
+.contenedor{
+    background-color: rgb(0, 0, 0);
+    width: 30%;
+    height:550px;
+    color: white;
+    border-radius: 40px;
+    margin-top: 50px;
+    overflow:scroll
+
+}
+.contenedor::-webkit-scrollbar {
+        display: none;
+      
+
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    padding-left: 10% ;
+    padding-right:10%;
+}
+
+.logo, .fa-solid{
+    width: 40%;
+    padding: 20px;
+}
+
+.imgMatrix{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.matrix{
+    width: 100%;
+    text-align: center;
+}
+
+.head{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+ul{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px;
+    font-size: 10px;
+
+}
+
+.reproducir, .footer{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px;
+
+}
+.imagenPopulares{
+    display: flex;
+    overflow:auto;
+    align-items: center;
+}
+
+
+.imagenJaponesas{
+    display: flex;
+    overflow:auto;
+    align-items: center;
+}
+
+.imagenEEUU{
+    display: flex;
+    overflow:auto;
+    align-items: center;
+}
+.btn{
+    margin: 0 2px;
+}
+.populares{
+
+    height: 150px;
+    border: none;
+    background-color: transparent;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+
+.imgPeli{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.modal-header h2{
+    margin-left: 20px;
+}
+
+.modal-body h2, p {
+    margin: 0 20px;
+    text-align: justify;
+}
+
+.footer{
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-around;
+   /* flex-wrap: wrap;*/
+
+}
+
+.footer a{
+    text-align: center;
+}
+
+
+.imgFoot{
+    width: 25px;
+}
+
+.modal-body{
+    text-align: center;
+}
+
+.modal-body a{
+    padding: 10px;
+    background-color: brown;
+    border: none;
+    color: white;
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.botonArriba{
+    padding: 10px;
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 18px;
+}
+
+.diva{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+.main{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+form{
+    width: 60%;
+    background-color: wheat;
+    text-align: center;
+    color: black;
+    border-radius: 15px;
+    padding: 3%;
+    font-weight: 700;
+    margin-top: 6%;
+}
+
+.formulario h1{
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.enviar{
+    padding: 10px;
+    background-color: rgb(226, 35, 35);
+    border: none;
+    border-radius: 6px;
+    font-weight: 800;
+    margin-bottom: 5%;
+}
+
+.inputRegistro{
+    margin: 10px;
+    width: 50%;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+
+
+/*medias querys para estilos responsive*/
+
+@media (min-width: 1025px) {
+    .contenedor{
+
+        width: 30%;
+        height: 500px;
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+
+
+    .footer a img{
+        width: 20px;
+        font-size: 5px;
+        flex-wrap: nowrap;
+    
+    }
+
+    .formulario{
+        margin-top: 0;
+    }
+
+}
+
+
+
+@media (max-width: 1024px) {
+    .contenedor{
+
+        width: 40%;
+        height: 450px;
+    }
+
+    .footer a img{
+        width: 20px;
+        font-size: 5px;
+        flex-wrap: nowrap;
+    
+    }
+
+    .formulario h1{
+        font-size: 20px;
+    }
+    .formulario{
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
+}
+@media (max-width: 840px) {
+    .contenedor{
+
+        width: 40%;
+        padding-bottom: 4%;
+        margin-top: 30px;
+    
+    }
+    .formulario{
+        font-size: 15px;
+        margin-top: 0;
+    }
+
+    .formulario h1{
+        font-size: 20px;
+    }
+
+
+
+}
+
+@media (max-width: 740px) {
+    .contenedor{
+        width: 50%;
+        height: 450px;
+        padding-bottom: 4%
+    }
+
+    .footer{
+        flex-wrap: wrap;
+        flex-direction: column;
+        margin: 5px;
+    }
+
+    .formulario{
+        font-size: 15px;
+        margin-top: 0;
+    }
+
+    .formulario h1{
+        font-size: 20px;
+    }
+
+
+}
+
+@media (max-width:450px){
+
+    .contenedor{
+
+        width:60%;
+        height: 450px;
+        padding-bottom: 4%
+
+    
+    }
+    .footer{
+        margin: 10px;
+        flex-wrap: wrap;
+        flex-direction: column;
+        margin: 5px;
+
+    }
+
+    .formulario{
+        font-size: 15px;
+        margin-top: 0;
+    }
+
+    .formulario h1{
+        font-size: 20px;
+    }
+}

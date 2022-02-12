@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peliculas Netflix</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <script src="https://kit.fontawesome.com/31c51aa85d.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <div id="contenedor" class="contenedor">
+        <header>
+
+            <nav>
+                <a href="index.html"><img class="logo" src="./images/logo.jpg" alt=""></a>
+                <a href="registro.html"><i class="fa-solid fa-bag-shopping"></i></a>
+            </nav>
+
+            <div id="head" class="head">
+                <button class="botonArriba" id="serie">Series</button>
+                <button class="botonArriba" id="pelicula">Peliculas</button>
+                <a id="lista" href="index.html">Mi Lista</a>
+            </div><br>
+        </header>
+
+        <main id="body">
+
+            <div class="imgMatrix">
+                <video id="video" class="matrix" src="./images/matrix.mp4"></video>
+            </div>
+
+            <div id="genero" class="genero">
+                <ul>
+                    <li>Surrealista</li>
+                    <li>Distópico</li>
+                    <li>Hábil</li>
+                    <li>Siniestro</li>
+                    <li>Emocionante</li>
+                </ul>
+            </div>
+
+
+            <div id="reproducir" class="reproducir">
+
+                <p><img src="" alt="">Mi lista</p>
+                <button id="boton" class="reproducir"> Reproducir </button>
+                <p><img src="" alt="">Info</p>
+
+            </div><br>
+
+
+            <div id="eleccion" class="eleccion">
+
+                <p>Populares en NetAndre</p><br>
+                <div id="imagenPopulares" class="imagenPopulares">
+                </div> <br>
+
+                <p>Series japonesas anime</p><br>
+                <div id="imagenJaponesas" class="imagenJaponesas">
+                </div> <br>
+
+
+                <p>Series de EE.UU. sobre crimenes</p><br>
+                <div id="imagenEEUU" class="imagenEEUU">
+                </div> <br>
+
+            </div>
+
+            <footer>
+                <div id="footer" class="footer">
+                    <a href="index.html"><img class="imgFoot" src="./images/logoInicio.jpg" alt=""> Inicio</a>
+                    <a href="" id="proximamente"><img class="imgFoot" src="./images/logoPeli.jpg " alt="">
+                        Próximamente</a>
+                    <p><img class="imgFoot" src="./images/logoBuscar.jpg" alt=""> Buscar</p>
+                    <a href="" id="descarga"><img class="imgFoot" src="./images/logoDescarga.jpg" alt=""> Descargas</a>
+                </div>
+            </footer>
+
+        </main>
+    </div>
+
+    <script src="./scripts/script.js" type="module"></script>
+
+</body>
+
+</html>
